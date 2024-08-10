@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/Logo.png" alt="Logo aura latam">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion--contenido">
+            <textarea class="area--texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="alerta">
+                <img src="assets/bi_exclamation-circle-fill.png" alt="alerta">
+                <p class="texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="forma--boton">
+                <button class="boton--encriptar">Encriptar</button>
+                <button class="boton--desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido--informacion" id="mensaje-no-encontrado">
+            <img src="assets/Muñeco.png" alt="Logo del Muñeco">
+            <h1 class="titulo">Ningún mensaje fue encontrado</h1>
+            <h2 class="subtitulo">Ingrese el texto que deseas desencriptar o encriptar</h2>
+        
+        </section>
+        <section>
+            <textarea class="area--resultado" id="area-resultado" placeholder="Resultado aquí" style="display: none;"></textarea>
+         <button class="boton--copiar" id="boton-copiar" style="display: none;">Copiar</button>
+        </section>
+      
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Orley Torres</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
